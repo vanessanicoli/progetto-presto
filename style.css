@@ -9,9 +9,9 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4{
 
 /* Colors */
 :root{
-    --gr: rgb(82, 183, 136);
-    --ye: rgb(237, 229, 166);
-    --bl: rgb(60, 55, 68);
+    --gr: rgb(82, 183, 136);    /* #52b788 */
+    --ye: rgb(237, 229, 166);   /* #ede5a6 */
+    --bl: rgb(60, 55, 68);      /* #3c3744 */
 }
 
 .bg-gr{
@@ -19,7 +19,7 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4{
 }
 
 .text-gr{
-    background-color: var(--gr);
+    color: var(--gr);
 }
 
 .bg-ye{
@@ -27,7 +27,7 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4{
 }
 
 .text-ye{
-    background-color: var(--ye);
+    color: var(--ye);
 }
 
 .bg-bl{
@@ -35,7 +35,7 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4{
 }
 
 .text-bl{
-    background-color: var(--bl);
+    color: var(--bl);
 }
 
 /* Body */
@@ -44,4 +44,77 @@ body{
     color: var(--ye);
 }
 
-/* */
+/* NAVBAR */
+
+.navbar{
+    height: 70px;
+}
+
+.logo{
+    height: 50px;
+}
+
+.logo2{
+    height: 40px;
+    transition: 0.5s;
+}
+
+.logo3{
+    height: 50px;
+}
+
+.nav-link{
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+.nav-link:hover{
+    transform: scale(1.1);
+    text-shadow: 3px 3px 8px var(--ye), -3px -3px 8px var(--ye);
+}
+
+
+/* HEADER */
+.header-custom{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(black, transparent, var(--bl) 99%), url('./media/milky-way-bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.btn-custom{
+    width: 130px;
+    height: 65px;
+    background-color: var(--gr);
+    color: var(--ye);
+    border: 3px solid var(--ye);
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.btn-custom:hover{
+    transform: scale(1.1);
+    background-color: var(--ye);
+    color: var(--gr);
+    border: 3px solid var(--gr);
+}
+
+
+
+
+
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 600px) {
+    .logo3{
+        display: none;
+    }
+}
