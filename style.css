@@ -1,0 +1,47 @@
+/* Fonts */
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, .h1, .h2, .h3, .h4{
+    font-family: "Orbitron", sans-serif;
+}
+
+/* Colors */
+:root{
+    --gr: rgb(82, 183, 136);
+    --ye: rgb(237, 229, 166);
+    --bl: rgb(60, 55, 68);
+}
+
+.bg-gr{
+    background-color: var(--gr);
+}
+
+.text-gr{
+    background-color: var(--gr);
+}
+
+.bg-ye{
+    background-color: var(--ye);
+}
+
+.text-ye{
+    background-color: var(--ye);
+}
+
+.bg-bl{
+    background-color: var(--bl);
+}
+
+.text-bl{
+    background-color: var(--bl);
+}
+
+/* Body */
+body{
+    background-color: var(--bl);
+    color: var(--ye);
+}
+
+/* */
