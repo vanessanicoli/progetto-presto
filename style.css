@@ -38,6 +38,15 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4{
     color: var(--bl);
 }
 
+.vh-75{
+    height: 75vh;
+}
+
+.position-top{
+    position: relative;
+    top: 70px;
+}
+
 /* Body */
 body{
     background-color: var(--bl);
@@ -64,6 +73,7 @@ body{
 }
 
 .nav-link{
+    font-family: "Orbitron", sans-serif;
     font-size: 20px;
     font-weight: 700;
     transition: 0.4s;
@@ -72,6 +82,7 @@ body{
 .nav-link:hover{
     transform: scale(1.1);
     text-shadow: 3px 3px 8px var(--ye), -3px -3px 8px var(--ye);
+    
 }
 
 
@@ -86,12 +97,14 @@ body{
 }
 
 .btn-custom{
-    width: 130px;
-    height: 65px;
+    width: 160px;
+    height: 80px;
     background-color: var(--gr);
     color: var(--ye);
     border: 3px solid var(--ye);
     border-radius: 50px;
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 3px;
     font-size: 18px;
     font-weight: 700;
     margin: 10px;
@@ -105,11 +118,59 @@ body{
     border: 3px solid var(--gr);
 }
 
+/* POSITIONED */
+
+.positioned{
+    position: relative;
+    top: -150px;
+}
+
+.col-custom{
+    padding: 10px;
+    border: 2px solid var(--ye);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.col-custom:hover{
+    border: 2px solid var(--gr);
+    color: var(--gr);
+    background-color: var(--bl);
+    transform: scale(1.1);   
+}
+
+/* NUMERI INCREMENTALI */
+
+.paragraph{
+    font-size: 30px;
+} 
+
+.number{
+    font-family: "Orbitron", sans-serif;
+    font-size: 40px;
+    color: var(--gr);
+}
 
 
+/* SWIPER REVIEWS */
+    .swiper {
+      width: 240px;
+      height: 320px;
+    }
 
-
-
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid var(--ye);
+      border-radius: 20px;
+      font-size: 22px;
+      font-weight: bold;
+      background-color: var(--gr);
+      color: var(--ye);
+      padding: 0px 20px;
+    }
 
 /* MEDIA QUERY */
 
