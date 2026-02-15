@@ -242,6 +242,91 @@ body{
 }
 
 
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+/* PAGINA CHI SIAMO */
+.circle{
+    width: 300px;
+    height: 300px;
+    border: 4px solid var(--gr);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.opener{
+    width: 80px;
+    height: 80px;
+    border: 4px solid var(--gr);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    background-color: var(--bl);
+    cursor: pointer;
+}
+
+.moved{
+    width: 80px;
+    height: 80px;
+    border: 4px solid var(--ye);
+    border-radius: 50%;
+    background-position: center;
+    background-size: 100%;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.flipCard{
+    height: 450px;
+    width: 280px;
+}
+
+.flipCard:hover > .inner{
+    transform: rotateY(180deg);
+}
+
+.inner{
+    width: 100%;
+    height: 100%;
+    border: 4px solid var(--gr);
+    border-radius: 20px;
+    position: relative;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+}
+
+.innerFace{
+    height: 450px;
+    width: 280px;
+    background-image: url('./media/teachers/Matteo.png');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.innerBack{
+    height: 450px;
+    width: 280px;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+
 /* MEDIA QUERY */
 
 @media screen and (max-width: 600px) {
