@@ -42,9 +42,8 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4{
     height: 75vh;
 }
 
-.position-top{
-    position: relative;
-    top: 70px;
+.m-top{
+    margin-top: 90px;
 }
 
 /* Body */
@@ -153,29 +152,101 @@ body{
 
 
 /* SWIPER REVIEWS */
-    .swiper {
-      width: 240px;
-      height: 320px;
-    }
+.swiper {
+    width: 240px;
+    height: 320px;
+}
 
-    .swiper-slide {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      border: 3px solid var(--ye);
-      border-radius: 20px;
-      font-size: 22px;
-      font-weight: bold;
-      background-color: var(--gr);
-      color: var(--ye);
-      padding: 0px 20px;
-    }
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--ye);
+    border-radius: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: var(--gr);
+    color: var(--ye);
+    padding: 0px 20px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+/* PAGINA ANNUNCI */
+
+.accordion-item, .accordion-button{
+    background-color: var(--bl);
+    color: var(--ye);
+    border: 1px solid var(--gr);
+}
+
+.accordion-button:not(.collapsed){
+    background-color: var(--gr);
+    color: var(--ye);
+    font-weight: bolder;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.form-check-input:checked {
+    background-color: var(--gr);
+    border-color: var(--gr);
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}
+
+#wordInput{
+    width: 100%;
+    outline: none;
+    border: 3px solid var(--gr);
+    border-radius: 5px; 
+    color: var(--bl);
+}
+
+.card-custom{
+    width: 30%;
+    border: 3px solid var(--gr);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.card{
+    width: 30%;
+    height: 450px;
+    border: 5px solid var(--gr);
+    background-color: var(--bl);
+    color: var(--ye);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.img-card{
+    margin: 0px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
 
 /* MEDIA QUERY */
 
 @media screen and (max-width: 600px) {
     .logo3{
         display: none;
+    }
+
+    .card{
+        width: 48%;
+        height: 350px;
+        margin: 10px 3px;
     }
 }

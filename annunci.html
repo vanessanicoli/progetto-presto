@@ -26,7 +26,7 @@
       </a>
       
       <img id="rocket" src="./media/logo/ship-bl.png" class="img-fluid logo2 d-md-none" alt="Immagine razzo" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-
+      
       <div class="collapse navbar-collapse bg-gr px-3" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-uppercase">
           <li class="nav-item me-3">
@@ -45,9 +45,81 @@
   </nav>
   <!-- NAVBAR END -->
   
-  <h1 class="position-top text-center text-uppercase my-3">Pagina degli annunci</h1>
+  <!-- HEADER -->
+  <header class="container-fluid m-top mb-4">
+    <h1 class="text-center text-uppercase">Pagina degli annunci</h1>
+  </header>
+  <!-- HEADER END -->
+  
+  <!-- ANNUNCI -->
+  
+  <section class="container">
+    <div class="row">
 
+      <!-- FILTRI -->
+      <div class="col-12 col-md-3 mx-2">
+        <h3>Filtra per:</h3>
+        <div class="accordion sticky-top" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Categoria
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div id="radioWrapper" class="accordion-body">
+                
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="categories" id="All" checked>
+                  <label class="form-check-label" for="All">
+                    Tutte le categorie
+                  </label>
+                </div>
 
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Prezzo
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <input id="priceInput" type="range" class="w-100" value="" max="">
+                <p class="lead" id="priceValue">0</p> 
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Parola
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <input id="wordInput" type="input">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FILTRI END -->
+
+      <!-- CARD ANNUNCI -->
+
+      <div id="cardWrapper" class="col-12 col-md-8 d-flex justify-content-around flex-wrap">
+
+      </div>
+
+      <!-- CARD ANNUNCI END-->
+    </div>
+  </section>
+  
+  <!-- ANNUNCI END -->
+  
   <!-- SWIPER JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <!-- Font Awesome -->
