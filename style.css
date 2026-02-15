@@ -191,6 +191,11 @@ body{
     box-shadow: none;
 }
 
+.accordion {
+  position: sticky;
+  top: 80px;
+}
+
 .form-check-input:checked {
     background-color: var(--gr);
     border-color: var(--gr);
